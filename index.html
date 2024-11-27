@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <script src="script.js"></script>
+    <style>
+        body{
+            background-color: beige;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 600;
+        }
+        button{
+            margin-bottom: 10px;
+        }
+        .container{
+            display: grid;
+            padding: 20px;
+
+        }
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LATEST QUOTE GENERATOR</h1>
+        <div class="quote">
+            <input type="text" id="category" placeholder="Enter your Category">
+            <button onclick="getQuote()">Generate</button>
+            <div id="quote"></div>
+            <button onclick="saveQuote()">Save</button>
+            <div id="save-quote"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
