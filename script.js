@@ -26,11 +26,12 @@ async function getQuote() {
   }
 }
 //SAVE THE DATA
-var num = 1;
+
 function saveQuote() {
   const quote = document.getElementById("quote").textContent;
   const saveQuote = document.getElementById("save-quote");
   try {
+    var num = 1;
     if (!quote.ok) {
       throw new Error("Please generate a quote to save!!");
     }
